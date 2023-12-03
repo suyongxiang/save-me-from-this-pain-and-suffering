@@ -1,3 +1,4 @@
+print("WELCOME TO DA CALCULATOR!")
 function2 = ""
 def minus(a,b):
     
