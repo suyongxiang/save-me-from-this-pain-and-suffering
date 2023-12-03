@@ -1,4 +1,5 @@
 print("WELCOME TO DA CALCULATOR!")
+yes = ""
 function2 = ""
 def minus(a,b):
     
@@ -11,11 +12,26 @@ def times (a,b):
 def divide(a,b):
     return a/b
 import numpy as np
-
-yes = "yes"
+rightpass = "Ac6463928"
+rightuser = "SU Y ONG XIANG"
+user = input("name.")
+if user == rightuser:
+    passpass = input("password.")
+    if passpass == rightpass:
+        print("come in buddy use the calculator")
+        yes = "yes"
+    else:
+        print("dont pretend to be me ok")
+else:
+    print("bro you are the wrong guy")
 
 while yes == "yes":
     function1 = str(input("Normal or trigonometry or geometry?")).lower()
+    secretfunc = str(input("theres a secret password. what is it?"))
+    if secretfunc == "BLEEP":
+        height = float(input("height in meters"))
+        weight = float(input("weight"))
+        print (weight/(height*height))
     if function1 == "normal":
         function2 = input("Minus,add,multiply or divide?").lower()
     
