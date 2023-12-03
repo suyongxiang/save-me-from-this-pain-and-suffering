@@ -1,15 +1,20 @@
-seconds = float(input("what is seconds"))
-BLEEP = 0
-hours = 0
-if seconds >= 60:
-    
-    BLEEP  = seconds//60
-    seconds = seconds%60
-if BLEEP >= 60:
-    hours = BLEEP//60
-    BLEEP = BLEEP%60
 
-
-print (seconds , "seconds")
-print(BLEEP, "minutes")
-print(hours,"hours")
+discountentry = 9/10
+discountshoe = 2/4
+price = 0
+soccer = input("u want soccer? yes or no")
+amount = float(input("amount of balls"))
+if soccer == "yes":
+    price = 5*amount
+entry = input("u want entry? yes or no")
+amounts = float(input("amount of students"))
+amountd = float(input("amount of NON students"))
+if entry == "yes":
+    price = price + 10*discountentry*amounts + 10*amountd   
+shoe = input("u want shoe? yes or no")
+amount = float(input("amount of shoes"))
+amounts = float(input("amount of students"))
+amountd = float(input("amount of NON students"))
+if shoe == "yes":
+    price = price + 6*discountshoe*amounts + 6*amountd
+print ("price is", round(price,2))
