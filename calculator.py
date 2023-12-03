@@ -22,16 +22,16 @@ while yes == "yes":
         num1 = int(input("please first number"))
         num2 = int(input("please second number"))
     
-    if function2 == "minus":
+        if function2 == "minus":
         
-        print(minus(num1,num2))
-    if function2 == "add":
+            print(minus(num1,num2))
+        if function2 == "add":
         
-        print(add(num1,num2))
-    if function2 == "multiply":
-        print(times(num1,num2))
-    if function2 == "divide":
-        print(divide(num1,num2))
+            print(add(num1,num2))
+        if function2 == "multiply":
+            print(times(num1,num2))
+        if function2 == "divide":
+            print(divide(num1,num2))
     elif function1 == "trigonometry":
         function2 = input("sin,tan or cos?").lower()
         if function2 == "sin":
